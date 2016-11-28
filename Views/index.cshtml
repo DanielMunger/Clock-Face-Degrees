@@ -1,11 +1,22 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Clock Angle Calculator</title>
     <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
   </head>
   <body>
-
+    <form action="/submit" method="post">
+      <div class="form-group">
+       <label for="UserInput">Enter a time in hh:mm format:</label>
+       <input type="text" class="form-control" name="UserInput" id="UserInput">
+     </div>
+     <button type="submit" name="button">Submit</button>
+    </form>
+    <div id="output">
+      <h3>Angle between hour hand and minute hand:</h3>
+      <span>@Model</span>
+    </div>
   </body>
 </html>
