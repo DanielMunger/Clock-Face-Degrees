@@ -39,7 +39,7 @@ namespace ClockObject
     public int DegreeDifference()
     {
       _degreeDifference = Math.Abs(_minuteDegrees - _hourDegrees);
-      return _degreeDifference;
+      return (_degreeDifference>180) ?  360 - _degreeDifference : _degreeDifference;
     }
   }
 }

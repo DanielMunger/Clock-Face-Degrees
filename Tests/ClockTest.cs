@@ -5,7 +5,7 @@ namespace ClockTest
 {
   public class Test
   {
-    string testTime = "01:45";
+    string testTime = "12:30";
     // [Fact]
     // public void Test1_GetHours_ReturnHours()
     // {
@@ -37,7 +37,7 @@ namespace ClockTest
       Clock myClock = new Clock(testTime);
       myClock.HoursToDegrees();
       myClock.MinutesToDegrees();
-      Assert.Equal(true, myClock.DegreeDifference() == 240);
+      Assert.Equal(true, myClock.DegreeDifference() == 180);
     }
   }
 }

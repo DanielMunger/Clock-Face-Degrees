@@ -10,7 +10,7 @@
     <form action="/submit" method="post">
       <div class="form-group">
        <label for="UserInput">Enter a time in hh:mm format:</label>
-       <input type="text" class="form-control" name="UserInput" id="UserInput">
+       <input type="text" class="form-control" name="UserInput" id="UserInput" placeholder="hh:mm" pattern="^[0-1][0-2]:[0-5][0-9]$" required>
      </div>
      <button type="submit" name="button">Submit</button>
     </form>
